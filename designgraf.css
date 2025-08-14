@@ -1,0 +1,23 @@
+.frame4 {
+  padding: 50px 20px;
+}
+
+.social-media {
+  margin-bottom: 50px;
+}
+
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 imagens por linha */
+  gap: 20px; /* espaço entre as imagens */
+}
+
+.images-grid img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s;
+}

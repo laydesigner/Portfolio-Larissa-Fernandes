@@ -1,0 +1,102 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+    color: #333;
+}
+
+/* Seção Edição de Vídeo */
+#Edicao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;  /* diminui o espaço interno */
+    gap: 20px;           /* diminui o espaço entre os elementos */
+    text-align: center;
+}
+
+/* Título */
+
+/* Vídeo centralizado e responsivo */
+#Edicao video {
+    width: 60%;           /* ocupa 60% da largura da tela */
+    max-width: 600px;     /* não passa de 600px */
+    min-width: 320px;     /* não fica menor que 320px */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Descrição do projeto */
+#Edicao .descricao-projeto {
+    font-size: 1 rem;
+    max-width: 600px;
+}
+
+/* Título com estrelas */
+#Edicao .titulo-edicao {
+    font-size: 2.5rem;            /* tamanho do texto */
+    color: #c49ad5;               /* cor da letra */
+    display: flex;                /* coloca texto e imagens em linha */
+    align-items: center;           /* centraliza verticalmente as estrelas com o texto */      /* centraliza no meio da tela */
+    gap: 10px;                     /* espaço entre texto e estrelas */
+}
+
+#Edicao .titulo-edicao .star-icon {
+    width: 30px;                   /* tamanho das estrelas */
+    height: 40px;
+    object-fit: contain;           /* mantém proporção da imagem */
+}
+
+
+header {
+    background: linear-gradient(90deg, #c49ad5, #000000); /* degrade roxo claro para roxo escuro */
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    max-height: 200px; /* aumenta a altura */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c49ad5;
+}
+
+#Edicao .frase-final {
+    font-size: 1rem;             /* menor que o título */
+    color: #6a0dad;              /* mesma cor do título */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;                    /* espaço entre texto e estrelas */
+    margin-top: 10px;            /* espaço acima da frase */
+    font-style: italic;          /* opcional, pra dar um charme */
+}
+
+#Edicao .frase-final .star-icon {
+    width: 20px;                 /* estrelas menores */
+    height: 20px;
+    object-fit: contain;
+}
