@@ -441,3 +441,100 @@ section#sobre {
 html {
   scroll-behavior: smooth;
 }
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0;
+  }
+
+  #sobre .container {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #sobre .imagem img {
+    width: 80%;
+    height: auto;
+  }
+
+  .texto p {
+    max-width: 100%;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .skills-left {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .skill-box {
+    width: 90%;
+    text-align: center;
+  }
+
+  .menininha-img {
+    width: 80%;
+  }
+
+  .images-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .identidade-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .identidade-logo {
+    width: 100%;
+    height: auto;
+  }
+
+  .identidade-thumb {
+    width: 45%;
+    height: auto;
+  }
+
+  .final-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .gif-gatinho {
+    width: 80%;
+  }
+}
+
+/* Ajustes extras para telas muito pequenas (celulares < 480px) */
+@media (max-width: 480px) {
+  .images-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .identidade-thumb {
+    width: 100%;
+  }
+
+  header .logo img {
+    max-height: 120px;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+}
